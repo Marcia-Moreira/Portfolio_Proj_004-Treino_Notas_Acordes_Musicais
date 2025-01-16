@@ -1,0 +1,58 @@
+/** RESET BASE: */
+
+/* Reset CSS básico */
+
+/* Remove margens e paddings padrões de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o estilo básico para o HTML e o body */
+html, body {
+    height: 100%;
+    font-size: 100%; /* Define 1rem como base */
+    font-family: Arial, sans-serif; /* Altere conforme necessário */
+    line-height: 1.5; /* Melhor legibilidade */
+}
+
+/* Remove estilo padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove estilos de links */
+a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto */
+}
+
+/* Remove bordas e estilo de botões */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit; /* Herda as fontes do elemento pai */
+}
+
+/* Remove bordas de campos de formulário */
+input, textarea {
+    border: none;
+    outline: none;
+    font: inherit; /* Herda as fontes do elemento pai */
+}
+
+/* Remove espaçamento entre células em tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Estilo para imagens e mídias */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

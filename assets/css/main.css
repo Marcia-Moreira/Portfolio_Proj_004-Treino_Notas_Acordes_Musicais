@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #581D22;
+  margin: 0;
+  padding: 0;
+}
+#game {
+  margin: 20px auto;
+  max-width: 600px;
+  background: #AC8E91;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.column {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/*! VERIFICAR: */
+button.btn-service {
+  min-width: 30px;
+  /* display: flex; */
+  justify-content: space-between;
+  gap: 40px;
+}
+/*! Botão Ativar Treino Não está funcionando direito: */
+
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #D5C7C8;
+  color: #581D22;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+button.selected {
+  /* Azul para primeira seleção */
+  background-color: #95b3d4 !important;
+  color: #4a90e2;
+  border: 2px solid #4a90e2;
+  transition: background-color 0.3s ease;
+}
+button.correct {
+  /* Verde para acertos */
+  background-color: #659971 !important;
+  color: #2f4534;
+  border: 2px solid #2f4534;
+  transition: background-color 0.3s ease;
+}
+button.wrong {
+  /* Vermelho para erros: */
+  background-color: #82565b !important;
+  color: #581D22;
+  border: 2px solid #581D22;
+  transition: background-color 0.3s ease;
+}
+button.fade-out {
+  opacity: 0;
+}
+
+/*! REVER o que é isso? */
+.note-hint {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+  display: none;
+}
+.note-hint.active {
+  display: block;
+}
+
+
+/* ************************************* */
+/** RESPONSIVIDADE DE TELA: */
+
+@media (max-width: 600px) {
+  #game {
+    margin: 15px auto;
+    max-width: 500px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+  }
+  #columns {
+    margin: 15px 0;
+  }
+  .column {
+    width: 35%;
+    gap: 15px;
+  }
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+/* ************************************* */

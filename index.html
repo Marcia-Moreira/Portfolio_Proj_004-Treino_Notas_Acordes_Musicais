@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Notas Musicais</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div id="game">
+    <h1>Treinando Notas Musicais</h1>
+    <!-- <a href="http://"><i class="bi bi-file-earmark-music"></i></a> -->
+    <p>Forme os pares corretos e treine notas musicais!</p>
+    <div id="controls">
+      <button id="toggle-play" class="btn-service">Play</button>
+      <button id="toggle-training" class="btn-service">Ativar Treino</button>
+    </div>
+    <div id="columns">
+      <div class="column" id="col1"></div>
+      <div class="column" id="col2"></div>
+    </div>
+    <div id="stats">
+      <p>Pontuação: <span id="score">0</span></p>
+      <p>Tempo restante: <span id="time">60</span> segundos</p>
+    </div>
+  </div>
+  <!-- <script src="./script.js"></script> -->
+  <script src="./assets/js/scriptMain.js"></script>
+  <script src="./assets/js/scriptGameLogic.js"></script>
+  <script src="./assets/js/scriptGameSetup.js"></script>
+  <!-- <script src="./assets/js/scriptCreateButtons.js"></script> -->
+  <script src="./assets/js/scriptTimer.js"></script>
+  <script src="./assets/js/scriptTrainingMode.js"></script>
+</body>
+</html>
+
+<!-- pAROU DE FUNCIONAR O CODIGO DE COLINHA ABAIXO QUANDO ATIVA TREINO!!! SE EU USO O CODIGO DE NOVO SORTEIO ELE ENCHE A TELA TODA COM OS 17 PARES -->
