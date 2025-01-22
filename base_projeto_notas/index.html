@@ -1,0 +1,125 @@
+<!-- Sidebar  -->
+<!-- Menu Lateral -->
+<!-- https://youtu.be/Poh9zuXp0YA?si=A5nc7PEkvtk2evt_ -->
+<!-- https://youtu.be/mm4TAzPYvm4?si=KVdMPFiOhbY3pwko -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>SideBar</title>
+</head>
+<body>
+<!-- MENU LATERAL -->
+    <header>
+        <nav class="menu-lateral">
+            <div class="btn-expandir">
+                <!-- Onde for i verificar a button -->
+                <!-- <i class="bi bi-list" id="btn-exp"></i> -->
+                <!-- <i id="btn-exp"><button class="hamburger"></button></i> -->
+                <button class="hamburger" id="btn-exp"></button>
+                <!-- <a href="/" class="logo"> MM_Tech </a> -->
+                <a href="#pag-sobre" class="logomarca">
+                    <span class="txt-link">MM_WEB</span>
+                </a>
+            </div>
+            <hr>
+            <ul class="bloco-menu">
+                <li class="item-menu ativo">
+                    <a href="#pag-home">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#pag-dashboard">
+                        <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                        <span class="txt-link">Dashboard</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#pag-agenda">
+                        <span class="icon"><i class="bi bi-calendar2-week"></i></span>
+                        <span class="txt-link">Agenda</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#pag-configuracoes">
+                        <!-- <i class="bi bi-tools"></i> -->
+                        <span class="icon"><i class="bi bi-screwdriver"></i></span>
+                        <span class="txt-link">Configurações</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#pag-conta">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="txt-link">Conta</span>
+                    </a>
+                </li>
+                <!--! Não ta Funcionando Thema -->
+                <!-- Dark <i class="bi bi-moon"></i> -->
+                 <!-- Ligth <i class="bi bi-brightness-high"></i> -->
+                <li class="item-menu">
+                    <a href="#pag-thema" id="theme-toggle">
+                        <span class="icon"><i id="theme-icon" class="bi bi-brightness-high"></i></span>
+                        <span id="theme-text" class="txt-link">Light</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- CONTAINER PRINCIPAL -->
+    <main>
+        <div class="container-layout">
+            <div class="pagina" id="pag-home">
+                <h3>Pagina Home</h3>
+                <section>
+                    <h4>Seção 1 da Layout</h4>
+                    <div>
+                        <h4>Div 1 da Layout Seção 1</h4>
+                    </div>
+                    <div>
+                        <h4>Div 2 da Layout Seção 1</h4>
+                    </div>
+                </section>
+                <section>
+                    <h3>Seção 2 da Layout 2</h3>
+                    <div>
+                        <h4>Div 2 da Layout Seção 2</h4>
+                    </div>
+                    <div>
+                        <h4>Div 2 da Layout Seção 2</h4>
+                    </div>
+                </section>
+            </div>
+    
+            <div class="pagina" id="pag-dashboard">
+                <h3>Pagina Dashboard</h3>
+            </div>
+    
+            <div class="pagina" id="pag-agenda">
+                <h3>Pagina Agenda</h3>
+            </div>
+    
+            <div class="pagina" id="pag-configuracoes">
+                <h3>Pagina Configurações</h3>
+            </div>
+    
+            <div class="pagina" id="pag-conta">
+                <h3>Pagina Conta</h3>
+            </div>
+
+            <div class="pagina" id="pag-sobre">
+                <h3>Página Sobre - Logo</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Verificar se faz -->
+    </footer>
+    <script src="script-theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

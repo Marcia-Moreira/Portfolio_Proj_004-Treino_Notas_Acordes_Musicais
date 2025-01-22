@@ -16,6 +16,7 @@ window.GameLogic = {
     //* OK Caso seja a primeira seleção, destacamos o botão
     if (!this.firstSelection) {
       this.firstSelection = btn;
+      //* OK Adiciona a classe "selected" para destacar o botão
       btn.classList.add("selected");
       return;
     }
@@ -30,9 +31,9 @@ window.GameLogic = {
       this.firstSelection.classList.add("correct");
       btn.classList.add("correct");
 
-      // Remove os botões após 500ms para dar tempo de ver a cor verde:
+      //* OK Remove os botões após 300ms para dar tempo de ver a cor verde:
       setTimeout(() => {
-        // Remove ambos os botões corretamente:
+        //! Remove ambos os botões corretos: NÃO
         this.firstSelection.remove();
         btn.remove();
 
@@ -41,22 +42,21 @@ window.GameLogic = {
           this.handleSelection(e, col1, col2, pairs, updateScore)
         );
 
-        // Resetando firstSelection para permitir uma nova seleção de pares
+        //! Resetando firstSelection para permitir uma nova seleção de pares:
         this.firstSelection = null;
-
       }, 300);
 
     } else {
-      //* OK Define os dois botões como vermelhos para indicar erro
+      //* OK Define os dois botões como vermelhos para indicar erro:
       this.firstSelection.classList.add('wrong');
       btn.classList.add('wrong');
      
-      // Após 500ms, reseta as cores de ambos os botões:
+      //* OK Após 300ms, reseta as cores vermelhas de ambos os botões:
       setTimeout(() => {
         this.firstSelection.classList.remove("wrong", "selected");
-        // Reseta o estilo do segundo botão errado
+        //* OK Reseta o estilo do segundo botão errado:
         btn.classList.remove('wrong');
-
+        //* OK Reseta a seleção:
         this.firstSelection = null;
 
       }, 300);

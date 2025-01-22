@@ -33,6 +33,14 @@ button.btn-service {
 }
 /*! Botão Ativar Treino Não está funcionando direito: */
 
+/* Para troca de botoes: */
+.empty-slot {
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px dashed #ccc;
+  cursor: default;
+}
 
 button {
   padding: 15px;
@@ -106,3 +114,4 @@ button.fade-out {
   }
 }
 /* ************************************* */
+
