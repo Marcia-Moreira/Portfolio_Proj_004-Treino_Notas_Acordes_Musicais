@@ -1,7 +1,7 @@
 // scriptPairManager.js
 // Responsável por gerenciar a adição e atualização de pares no jogo.
 
-// Gerenciamento dos pares e slots vazios
+// Gerenciamento dos pares e slots vazios:
 window.PairManager = {
     // Remove os botões corretos
     removeCorrectButtons() {

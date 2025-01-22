@@ -58,8 +58,24 @@ window.GameLogic = {
         btn.classList.remove('wrong');
         //* OK Reseta a seleção:
         this.firstSelection = null;
-
       }, 300);
     }
-  }
+  },
+  setupPlayPauseButton(timerDuration, timerDisplay, onTimeEnd) {
+    const playPauseButton = document.getElementById("playPauseButton");
+
+    playPauseButton.addEventListener("click", () => {
+      if (window.Timer.running) {
+        window.Timer.pause();
+        playPauseButton.textContent = "Play";
+      } else {
+        if (window.Timer.timeLeft === 0) {
+          window.Timer.start(timerDuration, timerDisplay, onTimeEnd);
+        } else {
+          window.Timer.resume(timerDisplay, onTimeEnd);
+        }
+        playPauseButton.textContent = "Pause";
+      }
+    });
+  },
 };

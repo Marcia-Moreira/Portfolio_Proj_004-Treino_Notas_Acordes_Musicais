@@ -77,6 +77,18 @@ button.wrong {
 button.fade-out {
   opacity: 0;
 }
+/* Botões com funções primárias de serviço: */
+button.btn-service {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  /*! Rever Palavras Menores para Treino: */
+  min-width: 180px;
+  max-width: 180px;
+  text-align: center;
+  background-color: #888;
+}
 
 /*! REVER o que é isso? */
 .note-hint {
