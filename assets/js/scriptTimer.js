@@ -55,4 +55,5 @@ window.Timer = {
     this.timeLeft = 0;
     this.running = false;
   },
+
 };

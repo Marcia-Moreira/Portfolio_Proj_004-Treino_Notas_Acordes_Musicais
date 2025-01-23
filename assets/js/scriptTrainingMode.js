@@ -12,7 +12,9 @@
 window.TrainingMode = {
   toggle(trainingMode, btn, pairs, col1, col2) {
     // Alternar estado do modo treino
+    
     trainingMode = !trainingMode;
+    // let trainingMode = false;
     btn.textContent = trainingMode ? "DESATIVAR TREINO" : "ATIVAR TREINO";
 
     // Atualizar legendas nos botões existentes
