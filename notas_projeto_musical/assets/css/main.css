@@ -24,15 +24,11 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-/*! VERIFICAR: */
 button.btn-service {
   min-width: 30px;
-  /* display: flex; */
   justify-content: space-between;
   gap: 40px;
 }
-/*! Botão Ativar Treino Não está funcionando direito: */
-
 /* Para troca de botoes: */
 .empty-slot {
   width: 100px;
@@ -41,7 +37,6 @@ button.btn-service {
   border: 1px dashed #ccc;
   cursor: default;
 }
-
 button {
   padding: 15px;
   font-size: 18px;
@@ -89,8 +84,15 @@ button.btn-service {
   text-align: center;
   background-color: #888;
 }
-
-/*! REVER o que é isso? */
+/* LEGENDAS de TREINAMENTO: */
+/* main.css */
+/* ALTERAÇÃO: Estilo para legendas */
+.column.legend p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+  text-align: left;
+}
 .note-hint {
   font-size: 14px;
   color: #888;
@@ -101,10 +103,8 @@ button.btn-service {
   display: block;
 }
 
-
 /* ************************************* */
 /** RESPONSIVIDADE DE TELA: */
-
 @media (max-width: 600px) {
   #game {
     margin: 15px auto;

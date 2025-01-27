@@ -38,6 +38,35 @@ document.addEventListener("DOMContentLoaded", () => {
     { note: "Bb", name: "Si♭" },
   ];
 
+  
+//! ==============================================
+  // ALTERAÇÃO: Atualiza as legendas dinamicamente com base nos pares sorteados.
+  function updateLegends(pairs, col1, col2) {
+    // Limpa as legendas anteriores
+    col1.innerHTML = "";
+    col2.innerHTML = "";
+
+    // Cria elementos de legenda para cada par
+    pairs.forEach(pair => {
+      const legend1 = document.createElement("p");
+      const legend2 = document.createElement("p");
+
+      legend1.textContent = `${pair.name} - Nota ${pair.note}`;
+      legend2.textContent = `${pair.note} - Nota ${pair.name}`;
+
+      col1.appendChild(legend1);
+      col2.appendChild(legend2);
+    });
+  }
+
+  // ALTERAÇÃO: Chamada da função ao criar botões no jogo principal.
+  window.GameSetup.createButtons(pairs, col1, col2, (e) => {
+    window.GameLogic.handleSelection(e, col1, col2, pairs, updateScore);
+    updateLegends(pairs, col1, col2); // Atualiza as legendas
+  });
+
+
+//! ==============================================
   // Atualiza a pontuação:
   function updateScore(points) {
     score += points;

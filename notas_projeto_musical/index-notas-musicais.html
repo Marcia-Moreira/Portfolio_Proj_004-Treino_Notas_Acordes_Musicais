@@ -14,11 +14,12 @@
     <p>Forme os pares corretos e treine notas musicais!</p>
     <div id="controls">
       <button id="play-pause" class="btn-service">PLAY</button>
-      <button id="toggle-training" class="btn-service">ATIVAR TREINO</button>
+      <!--? Modo Treino pausado em 27-01-2025, para Implementação Futura -->
+      <!-- <button id="toggle-training" class="btn-service">ATIVAR TREINO</button> -->
     </div>
     <div id="columns">
-      <div class="column" id="col1"></div>
-      <div class="column" id="col2"></div>
+      <div class="column legend" id="col1"></div>
+      <div class="column legend" id="col2"></div>
     </div>
     <div id="stats">
       <p>Pontuação: <span id="score">0</span></p>
@@ -31,14 +32,6 @@
   <script src="./assets/js/scriptGameSetup.js"></script>
   <script src="./assets/js/scriptTimer.js"></script>
   <script src="./assets/js/scriptTrainingMode.js"></script>
+  <!-- <script src="./assets/js/scriptLegend.js"></script> -->
 </body>
 </html>
-
-
-<!-- Observações:
- 
-Após zerar o timer e aparecer o popup com a pontuação e o cliente apertar o ok a tela deveria ter a pontuação zerada e o timer deveria aparecer 60 e o botão Play/Pause, deveria voltar para Play e as teclas do jogo só poderiam voltar a funcionar se o play fosse apertado novamente.
-
-
-
--->

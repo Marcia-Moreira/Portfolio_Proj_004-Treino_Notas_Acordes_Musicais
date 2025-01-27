@@ -1,4 +1,6 @@
 // SCRIPT => Lida com a funcionalidade de alternar o modo de treino, exibindo ou ocultando as "legendas de treino".
+//? Modo Treino pausado em 27-01-2025, para Implementação Futura.
+
 
 // trainingMode.js
 // Alternar modo de treino:
