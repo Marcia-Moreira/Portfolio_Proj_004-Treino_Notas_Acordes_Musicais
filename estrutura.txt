@@ -1,0 +1,27 @@
+Listagem de caminhos de pasta
+O número de série do volume é 846B-DF1C
+C:.
+|   .gitignore
+|   desktop.ini
+|   estrutura.txt
+|   favicon.ico
+|   index.html
+|   LICENSE.md
+|   README.md
+|   setup.sh
+|   
+\---notas_projeto_musical
+    \---assets
+        +---css
+        |       main.css
+        |       reset.css
+        |       
+        \---js
+                scriptGameLogic.js
+                scriptGameSetup.js
+                scriptLegend.js
+                scriptMain.js
+                scriptPairManager.js
+                scriptTimer.js
+                scriptTrainingMode.js
+                
